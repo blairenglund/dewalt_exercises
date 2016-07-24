@@ -1,0 +1,102 @@
+body{
+	background-color: #555;
+	padding: 10px;
+	text-align: center;
+}
+
+.head{
+	color: #FFF;
+	font-family: Tahoma, sans-serif;
+	font-size: 40px;
+	margin-bottom: 30px;
+	font-weight: lighter;
+}
+
+.table{
+	background-color: #CCA;
+	width: 920px;
+	height: 600px;
+	box-shadow: 3px 3px 5px;
+	padding: 20px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.palette{
+	height: 100%;
+	width: 100px;
+	display: flex;
+	flex-flow: column;
+}
+
+.palette__color{
+	height: 100px;
+	width: 100px;
+	margin-bottom: 20px;
+}
+
+.palette__color--red{
+	background-color: red;
+}
+
+.palette__color--yellow{
+	background-color: yellow;
+}
+
+.palette__color--blue{
+	background-color: blue;
+}
+
+.palette__color--white{
+	background-color: white;
+}
+
+.canvas{
+	background-color: black;
+	height: 100%;
+	width: 800px;
+	border: 1px solid black;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.canvas__row1{
+	background-color: white;
+	height: 120px;
+}
+
+.canvas__row2{
+	background-color: white;
+	height: 220px;
+}
+
+.canvas__row3{
+	background-color: white;
+	height: 60px;
+}
+
+.canvas__row4{
+	background-color: white;
+	height: 160px;
+}
+
+.canvas__square1{
+	width: 160px;
+}
+
+.canvas__square2{
+	width: 340px;
+}
+
+.canvas__square3{
+	width: 100px;
+}
+
+.canvas__square4{
+	width: 160px;
+}
+
