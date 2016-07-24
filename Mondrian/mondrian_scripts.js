@@ -9,29 +9,43 @@ window.addEventListener("load", function(){
 	//create a variable for the squares in the canvas
 	var squares = document.querySelectorAll("div.canvas div");
 
+	var currentcolor = "";
+
+	//creates event listeners for each square
+	//
+	//c is the selected color
+	function makeListeners(x) {
+		squares[x].addEventListener('click', function() {
+			squares[x].style.backgroundColor = currentcolor;
+		});
+	};
 
 	bluebutton.addEventListener('click', function(){
-		debugger;
-		for (var i = squares.length - 1; i >= 0; i--) {
-			squares[i].addEventListener('click', function(){
-				squares[i].style.backgroundColor = "blue";
-			});
-		};
+		currentcolor = "blue";
+		for (var i = 0; i < squares.length; i++) {
+			makeListeners(i);
+		}
 	});
 
 	redbutton.addEventListener('click', function(){
 		currentcolor = "red";
-		debugger;
+		for (var i = 0; i < squares.length; i++) {
+			makeListeners(i);
+		}
 	});
 
 	yellowbutton.addEventListener('click', function(){
 		currentcolor = "yellow";
-		debugger;
+		for (var i = 0; i < squares.length; i++) {
+			makeListeners(i);
+		}
 	});
 
 	whitebutton.addEventListener('click', function(){
 		currentcolor = "white";
-		debugger;
+		for (var i = 0; i < squares.length; i++) {
+			makeListeners(i);
+		}
 	});
 
 })

@@ -1,3 +1,8 @@
+@font-face{
+	font-family: SourceSans;
+	src: url(SourceSansPro-Light.otf);
+}
+
 body{
 	background-color: #555;
 	padding: 10px;
@@ -6,10 +11,11 @@ body{
 
 .head{
 	color: #FFF;
-	font-family: Tahoma, sans-serif;
-	font-size: 40px;
+	font-family: "SourceSans", Tahoma, sans-serif;
+	font-size: 50px;
 	margin-bottom: 30px;
 	font-weight: lighter;
+	text-shadow: 1px 1px 3px black;
 }
 
 .table{
