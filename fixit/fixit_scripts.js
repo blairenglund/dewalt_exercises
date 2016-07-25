@@ -15,13 +15,13 @@ window.addEventListener('load', function() {
 	button.addEventListener('click', function() {
 		modal.style.display = "block";
 		status.style.animationName = "progress";
+		text.innerHTML = "";
 	});
 
 	status.addEventListener('animationend', function(){
 		modal.style.display = "none";
 		status.style.animationName = "";
 		text.innerHTML = "Your problem should now be fixed.<br><br>More problems? Press the Fix It button again.";
-
 	});
 
 })
